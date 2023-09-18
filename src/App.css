@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap");
+
+@font-face {
+  font-family: "ClashDisplay-Regular";
+  src: url("./assets/fonts/ClashDisplay-Regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Medium";
+  src: url("./assets/fonts/ClashDisplay-Medium.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Semibold";
+  src: url("./assets/fonts/ClashDisplay-Semibold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Bold";
+  src: url("./assets/fonts/ClashDisplay-Bold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+  --Background-Color: #141414;
+  --Yellow: #f6cd58;
+  --White: #f5f1f1;
+  --Gray: #5c6b78;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Background-Color);
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 70px;
+  width: 100%;
+}
+
+.nav-logo {
+  width: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-links-text {
+  color: var(--White);
+  font-family: IBM Plex Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0 1rem;
+}
+
+.nav-social-icon {
+  width: 1.8rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 72px;
+  cursor: default;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.header-title {
+  font-family: "ClashDisplay-Bold";
+  font-style: normal;
+  color: var(--White);
+  font-size: 14rem;
+  line-height: 80%;
+  margin: 18px 0;
+}
+
+.header-text {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--White);
+  font-size: 21.3px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.header-line-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.header-line-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.showroom-container {
+  width: 100%;
+  padding: 2rem 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 72px;
+}
+
+.showroom-controls {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.showroom-img {
+  z-index: 0;
+}
+
+.showroom-arrow {
+  all: unset;
+  cursor: pointer;
+  user-select: none;
+}
+
+.title-container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 70px;
+  width: fit-content;
+}
+
+.title-container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 70px;
+  width: fit-content;
+  float: right;
+}
+
+.title-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: auto;
+}
+
+.title-text {
+  font-family: "ClashDisplay-Regular";
+  font-style: normal;
+  color: var(--White);
+  font-size: 67px;
+  line-height: 100%;
+  text-transform: uppercase;
+  z-index: 10;
+  margin-left: 4rem;
+  margin-top: 0.5rem;
+}
+
+.title-dots {
+  z-index: 0;
+  position: absolute;
+}
+
+.title-line {
+  padding-left: 2rem;
+}
+
+.title-dash {
+  padding-top: 0.4rem;
+  align-self: flex-end;
+}
+
+.title-group-right {
+  float: right;
+  background-color: green;
+}
+
+.service-container {
+  display: flex;
+  width: 530px;
+  height: 416px;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--Transparent-Yello, rgba(246, 205, 88, 0.4));
+  background: var(--Background-Color, #141414);
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.service-header {
+  color: var(--White);
+  font-family: Clash Display Variable;
+  font-size: 37.9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.service-descript {
+  color: var(--Text---Gray, #5c6b78);
+  font-family: IBM Plex Sans;
+  font-size: 21.3px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.service-cards-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 2rem 70px;
+}
+
+.studio-cards-group {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2rem 70px;
+}
+
+.studio-client-card-container {
+  display: flex;
+  width: 1080px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.studio-client-card {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  padding: 10px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--Transparent-Yello, rgba(246, 205, 88, 0.4));
+  background: var(--Background-Color, #141414);
+}
