@@ -17,6 +17,7 @@ function App() {
       <ServicesGroup />
       <TitleTextRight title="Studio Clients" />
       <StudioClientsGroup />
+      <TitleTextLeft title="Team & Partnerships" />
     </>
   );
 }

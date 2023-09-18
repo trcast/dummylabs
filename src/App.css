@@ -181,6 +181,8 @@ header {
   align-items: flex-start;
   padding: 2rem 70px;
   width: fit-content;
+  margin-top: 144px;
+  margin-bottom: 48px;
 }
 
 .title-container-right {
@@ -191,6 +193,8 @@ header {
   padding: 2rem 70px;
   width: fit-content;
   float: right;
+  margin-top: 144px;
+  margin-bottom: 48px;
 }
 
 .title-text-container {
