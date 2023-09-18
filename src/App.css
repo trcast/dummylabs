@@ -150,6 +150,7 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 72px;
+  background-color: darkgray;
 }
 
 .showroom-controls {
