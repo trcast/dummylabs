@@ -150,7 +150,6 @@ header {
   justify-content: center;
   align-items: center;
   margin-top: 72px;
-  background-color: darkgray;
 }
 
 .showroom-controls {
@@ -319,4 +318,193 @@ header {
   border-radius: 4px;
   border: 1px solid var(--Transparent-Yello, rgba(246, 205, 88, 0.4));
   background: var(--Background-Color, #141414);
+}
+
+.team-card-container {
+  display: flex;
+  height: 414px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+}
+
+.team-card-img {
+  border-radius: 4px;
+  width: 300px;
+}
+
+.team-card-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+  padding: 24px 12px 12px 12px;
+}
+
+.team-card-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.team-card-title {
+  color: var(--Gray);
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.team-card-name {
+  font-family: "ClashDisplay-Regular";
+  font-size: 37.9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90%;
+  color: var(--White);
+}
+
+.team-group-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-card-group-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 62px;
+  padding: 2rem 70px;
+}
+
+.team-group-title {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 36px;
+  margin-top: 36px;
+}
+
+.team-group-title h1 {
+  font-family: Clash Display Variable;
+  font-size: 50.5px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--White);
+  text-transform: uppercase;
+}
+
+.dots-bg {
+  z-index: -1;
+  top: 0;
+  position: absolute;
+  padding-top: 160px;
+}
+.gradient-one {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  padding-top: 770px;
+}
+
+.gradient-two {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  padding-top: 1601px;
+  transform: scaleX(-1);
+  right: 0;
+}
+
+.gradient-three {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  padding-top: 2929px;
+}
+
+.gradient-four {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  padding-top: 4053px;
+  transform: scaleX(-1);
+  right: 0;
+}
+
+.gradient-five {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  padding-top: 5400px;
+}
+
+.graphic-one {
+  z-index: -3;
+  position: absolute;
+  top: 0;
+  right: 68px;
+  padding-top: 1248px;
+}
+
+.graphic-two {
+  z-index: -3;
+  position: absolute;
+  top: 0;
+  left: 68px;
+  padding-top: 2948px;
+}
+
+.typeform-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 144px;
+}
+
+.typeform {
+  max-width: 1440px;
+  width: 100%;
+  height: 500px;
+  align-self: center;
+}
+
+footer {
+  display: flex;
+  height: 199px;
+  padding: 0px 70px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-top: 1px solid var(--Transparent-Yello, rgba(246, 205, 88, 0.4));
+}
+
+.footer-copy {
+  color: var(--Text---Off-White, #f5f1f1);
+  font-family: Sofia Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.footer-socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  flex-shrink: 0;
+}
+
+.footer-socials {
+  width: 50px;
+  padding-left: 14px;
 }
