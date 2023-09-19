@@ -364,6 +364,7 @@ header {
   font-weight: 500;
   line-height: 90%;
   color: var(--White);
+  text-transform: uppercase;
 }
 
 .team-group-section {
