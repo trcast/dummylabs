@@ -8,8 +8,20 @@ const Footer = () => {
     <footer>
       <p className="footer-copy">© DUMMY LABS 2023</p>
       <div className="footer-socials-container">
-        <img className="footer-socials" src={Twitter} alt="" />
-        <img className="footer-socials" src={Discord} alt="" />
+        <a
+          href="https://x.com/Dummy_Labs?s=20"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="footer-socials" src={Twitter} alt="" />
+        </a>
+        <a
+          href="https://discord.gg/2ceeRARH"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="footer-socials" src={Discord} alt="" />
+        </a>
       </div>
     </footer>
   );

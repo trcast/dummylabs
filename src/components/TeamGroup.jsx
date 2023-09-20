@@ -20,9 +20,24 @@ const TeamGroup = React.forwardRef((props, ref) => {
           <img src={LineRight} alt="" />
         </div>
         <div className="team-card-group-container">
-          <TeamCard pfp={Manchez} title="Creative Director" name="Manchez" />
-          <TeamCard pfp={Danny} title="Managing Director" name="Danny" />
-          <TeamCard pfp={Nick} title="Marketing Director" name="Nick" />
+          <TeamCard
+            pfp={Manchez}
+            title="Creative Director"
+            name="Manchez"
+            link="https://twitter.com/Manchez_sol"
+          />
+          <TeamCard
+            pfp={Danny}
+            title="Managing Director"
+            name="Danny"
+            link="https://twitter.com/dannyph3ntom"
+          />
+          <TeamCard
+            pfp={Nick}
+            title="Marketing Director"
+            name="Nick"
+            link="https://twitter.com/ruggednick"
+          />
         </div>
       </div>
       {/* DESIGNERS ---------------------------- */}
@@ -33,9 +48,24 @@ const TeamGroup = React.forwardRef((props, ref) => {
           <img src={LineRight} alt="" />
         </div>
         <div className="team-card-group-container">
-          <TeamCard pfp={Ompo} title="3D Artist" name="Ompo" />
-          <TeamCard pfp={Solmg} title="3D Artist & Art Director" name="Solmg" />
-          <TeamCard pfp={Clipse} title="3D Animator" name="Clipse" />
+          <TeamCard
+            pfp={Ompo}
+            title="3D Artist"
+            name="Ompo"
+            link="https://twitter.com/Ompolompon"
+          />
+          <TeamCard
+            pfp={Solmg}
+            title="3D Artist & Art Director"
+            name="Solmg"
+            link="https://twitter.com/solmg_art"
+          />
+          <TeamCard
+            pfp={Clipse}
+            title="3D Animator"
+            name="Clipse"
+            link="https://twitter.com/OBClipse"
+          />
         </div>
       </div>
     </div>

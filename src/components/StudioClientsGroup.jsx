@@ -15,16 +15,56 @@ const StudioClientsGroup = React.forwardRef((props, ref) => {
   return (
     <div className="studio-cards-group" ref={ref}>
       <div className="studio-client-card-container">
-        <StudioClientsCard logo={ChaChaVans} />
-        <StudioClientsCard logo={Dragons} />
-        <StudioClientsCard logo={Architects} />
-        <StudioClientsCard logo={Madlads} />
-        <StudioClientsCard logo={Forgebots} />
-        <StudioClientsCard logo={Ukiyo} />
-        <StudioClientsCard logo={Funguyz} />
-        <StudioClientsCard logo={Poppalz} />
-        <StudioClientsCard logo={Jellybeasts} />
-        <StudioClientsCard logo={Bohemia} />
+        <StudioClientsCard
+          logo={ChaChaVans}
+          name="Cha Cha Vans"
+          link="https://twitter.com/ChaChaVansNFT"
+        />
+        <StudioClientsCard
+          logo={Dragons}
+          name="BORYOKU DRAGONZ"
+          link="https://twitter.com/BoryokuDragonz"
+        />
+        <StudioClientsCard
+          logo={Architects}
+          name="THE ARCHITECTS"
+          link="https://twitter.com/_thearchitects_"
+        />
+        <StudioClientsCard
+          logo={Madlads}
+          name="Mad Lads"
+          link="https://twitter.com/_thearchitects_"
+        />
+        <StudioClientsCard
+          logo={Forgebots}
+          name="Forgebots"
+          link="https://twitter.com/forgebots"
+        />
+        <StudioClientsCard
+          logo={Ukiyo}
+          name="Ukiyo Studio"
+          link="https://twitter.com/UkiyoNFT_"
+        />
+        <StudioClientsCard
+          logo={Funguyz}
+          name="fun guyz"
+          link="https://twitter.com/FunGuyzNFT"
+        />
+        <StudioClientsCard
+          logo={Poppalz}
+          name="pop pals"
+          link="https://twitter.com/poppinpals"
+        />
+        <StudioClientsCard
+          logo={Jellybeasts}
+          name="jelly beasts"
+          link="https://twitter.com/JellyBeasts_Sol"
+        />
+        <StudioClientsCard
+          logo={Bohemia}
+          name="bohemia art fair"
+          link="https://twitter.com/BohemiaArtFair"
+        />
       </div>
     </div>
   );

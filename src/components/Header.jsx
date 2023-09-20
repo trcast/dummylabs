@@ -2,9 +2,9 @@ import React from "react";
 import topLine from "../assets/client/line-short-bottom-left.svg";
 import bottomLine from "../assets/client/line-short-top-right.svg";
 
-const Header = () => {
+const Header = React.forwardRef((props, ref) => {
   return (
-    <header>
+    <header ref={ref}>
       <div className="header-line-top">
         <img src={topLine} alt="" />
       </div>
@@ -20,6 +20,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+});
 
 export default Header;

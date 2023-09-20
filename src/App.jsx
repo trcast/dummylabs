@@ -21,6 +21,7 @@ function App() {
   const clientsRef = useRef(null);
   const teamRef = useRef(null);
   const contactRef = useRef(null);
+  const headerRef = useRef(null);
 
   return (
     <>
@@ -31,9 +32,11 @@ function App() {
           clientsRef,
           teamRef,
           contactRef,
+          headerRef,
         }}
       />
-      <Header />
+
+      <Header ref={headerRef} />
       <Showroom ref={showroomRef} />
       <TitleTextLeft title="3D Design Services" />
       <ServicesGroup ref={servicesRef} />

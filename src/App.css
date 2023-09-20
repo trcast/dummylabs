@@ -33,6 +33,9 @@
   --Yellow: #f6cd58;
   --White: #f5f1f1;
   --Gray: #5c6b78;
+  --Transition: all 0.3s cubic-bezier(0.29, 0.1, 0.34, 0.99);
+  --Transition-Two: all 0.2s cubic-bezier(0.29, 0.1, 0.34, 0.99);
+  --Transition-Three: all 0.4s cubic-bezier(0.29, 0.1, 0.34, 0.99);
 }
 
 * {
@@ -44,10 +47,15 @@
 body {
   background-color: var(--Background-Color);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
   display: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {
@@ -55,12 +63,23 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 70px;
+  padding: 1.5rem 70px;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: var(--Background-Color);
+  z-index: 100;
 }
 
 .nav-logo {
   width: 3rem;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.nav-logo:hover {
+  transform: rotate(180deg);
 }
 
 .nav-links {
@@ -80,12 +99,45 @@ nav {
   line-height: normal;
   text-transform: uppercase;
   margin: 0 1rem;
+  transition: all 400ms ease-in-out;
+}
+
+.nav-links-text:hover {
+  color: var(--Yellow);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -8px;
+  left: 0;
+  background-color: var(--Yellow);
+  transform-origin: bottom right;
+  transition: var(--Transition);
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .nav-social-icon {
   width: 1.8rem;
   margin-left: 0.5rem;
   cursor: pointer;
+  transition: var(--Transition-Two);
+}
+
+.nav-social-icon:hover {
+  transform: scale(1.2);
 }
 
 header {
@@ -214,6 +266,7 @@ header {
   z-index: 10;
   margin-left: 4rem;
   margin-top: 0.5rem;
+  cursor: default;
 }
 
 .title-dots {
@@ -247,6 +300,11 @@ header {
   border-radius: 4px;
   border: 1px solid var(--Transparent-Yello, rgba(246, 205, 88, 0.4));
   background: var(--Background-Color, #141414);
+  transition: var(--Transition-Two);
+}
+
+.service-container:hover {
+  transform: scale(0.97);
 }
 
 .service-text {
@@ -255,6 +313,7 @@ header {
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
+  cursor: default;
 }
 
 .service-header {
@@ -265,6 +324,7 @@ header {
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  cursor: default;
 }
 
 .service-descript {
@@ -274,6 +334,7 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  cursor: default;
 }
 
 .service-cards-container {
@@ -318,6 +379,46 @@ header {
   border-radius: 4px;
   border: 1px solid var(--Transparent-Yello, rgba(246, 205, 88, 0.4));
   background: var(--Background-Color, #141414);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.studio-client-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--Yellow);
+  transform: translateY(100%);
+  transition: var(--Transition-Three);
+}
+
+.studio-client-card:hover .studio-client-info {
+  bottom: 0;
+  transform: translateY(0);
+  transition: var(--Transition-Three);
+}
+
+.studio-client-name {
+  color: var(--Background-Color);
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Clash Display Variable;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.studio-client-link {
+  display: block;
 }
 
 .team-card-container {
@@ -327,6 +428,20 @@ header {
   justify-content: center;
   align-items: center;
   width: 320px;
+  cursor: pointer;
+  transition: var(--Transition);
+}
+
+.team-card-container:hover {
+  transform: translate(0, -20px);
+}
+
+.team-card-social {
+  transition: var(--Transition);
+}
+
+.team-card-social:hover {
+  transform: scale(1.2);
 }
 
 .team-card-img {
@@ -508,6 +623,11 @@ footer {
 .footer-socials {
   width: 50px;
   padding-left: 14px;
+  transition: var(--Transition-Two);
+}
+
+.footer-socials:hover {
+  transform: scale(1.2);
 }
 
 @media (max-width: 500px) {
