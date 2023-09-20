@@ -16,7 +16,7 @@ const Footer = () => {
           <img className="footer-socials" src={Twitter} alt="" />
         </a>
         <a
-          href="https://discord.gg/2ceeRARH"
+          href="https://discord.gg/kZmcmaMJ"
           target="_blank"
           rel="noopener noreferrer"
         >

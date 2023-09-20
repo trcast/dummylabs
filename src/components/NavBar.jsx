@@ -61,7 +61,7 @@ const NavBar = ({ refs }) => {
           <img src={twitter} alt="Twitter Logo" className="nav-social-icon" />
         </a>
         <a
-          href="https://discord.gg/2ceeRARH"
+          href="https://discord.gg/kZmcmaMJ"
           target="_blank"
           rel="noopener noreferrer"
         >
