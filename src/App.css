@@ -313,7 +313,7 @@ header {
 
 .service-header {
   color: var(--White);
-  font-family: Clash Display Variable;
+  font-family: "ClashDisplay-Medium";
   font-size: 37.9px;
   font-style: normal;
   font-weight: 500;
@@ -405,7 +405,7 @@ header {
   color: var(--Background-Color);
   text-transform: uppercase;
   text-align: center;
-  font-family: Clash Display Variable;
+  font-family: "ClashDisplay-Regular";
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -503,7 +503,7 @@ header {
 }
 
 .team-group-title h1 {
-  font-family: Clash Display Variable;
+  font-family: "ClashDisplay-Regular";
   font-size: 50.5px;
   font-style: normal;
   font-weight: 500;
