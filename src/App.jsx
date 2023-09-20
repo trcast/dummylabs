@@ -54,6 +54,8 @@ function App() {
         <img className="gradient-three" src={Gradient} alt="" />
         <img className="gradient-four" src={Gradient} alt="" />
         <img className="gradient-five" src={Gradient} alt="" />
+        <img className="gradient-six" src={Gradient} alt="" />
+        <img className="gradient-seven" src={Gradient} alt="" />
         <img className="graphic-one" src={GraphicOne} alt="" />
         <img className="graphic-two" src={GraphicTwo} alt="" />
       </div>

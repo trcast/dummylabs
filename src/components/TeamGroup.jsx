@@ -8,6 +8,8 @@ import Ompo from "../assets/pfps/Ompo.png";
 import Solmg from "../assets/pfps/SOLMG.jpeg";
 import LineRight from "../assets/client/team-line-right.svg";
 import LineLeft from "../assets/client/team-line-left.svg";
+import LineShortRight from "../assets/client/line-short-bottom-right-alt.svg";
+import LineShortLeft from "../assets/client/line-short-bottom-left-alt.svg";
 
 const TeamGroup = React.forwardRef((props, ref) => {
   return (
@@ -15,9 +17,19 @@ const TeamGroup = React.forwardRef((props, ref) => {
       {/* CORE TEAM ---------------------------- */}
       <div className="team-group-section">
         <div className="team-group-title">
-          <img src={LineLeft} alt="" />
+          <img className="team-group-title-line" src={LineLeft} alt="" />
+          <img
+            className="team-group-title-line-mobile"
+            src={LineShortLeft}
+            alt=""
+          />
           <h1>Core Team</h1>
-          <img src={LineRight} alt="" />
+          <img className="team-group-title-line" src={LineRight} alt="" />
+          <img
+            className="team-group-title-line-mobile"
+            src={LineShortRight}
+            alt=""
+          />
         </div>
         <div className="team-card-group-container">
           <TeamCard
@@ -43,9 +55,19 @@ const TeamGroup = React.forwardRef((props, ref) => {
       {/* DESIGNERS ---------------------------- */}
       <div className="team-group-section">
         <div className="team-group-title">
-          <img src={LineLeft} alt="" />
+          <img
+            className="team-group-title-line-mobile"
+            src={LineShortLeft}
+            alt=""
+          />
+          <img className="team-group-title-line" src={LineLeft} alt="" />
           <h1>DESIGNERS</h1>
-          <img src={LineRight} alt="" />
+          <img
+            className="team-group-title-line-mobile"
+            src={LineShortRight}
+            alt=""
+          />
+          <img className="team-group-title-line" src={LineRight} alt="" />
         </div>
         <div className="team-card-group-container">
           <TeamCard

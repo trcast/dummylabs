@@ -283,11 +283,6 @@ header {
   align-self: flex-end;
 }
 
-.title-group-right {
-  float: right;
-  background-color: green;
-}
-
 .service-container {
   display: flex;
   width: 530px;
@@ -517,6 +512,10 @@ header {
   text-transform: uppercase;
 }
 
+.team-group-title-line-mobile {
+  display: none;
+}
+
 .dots-bg {
   z-index: -1;
   top: 0;
@@ -633,5 +632,141 @@ footer {
 @media (max-width: 500px) {
   nav {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .nav-logo {
+    padding-bottom: 2rem;
+  }
+
+  .nav-logo:hover {
+    transform: scale(1.1);
+  }
+
+  .nav-social-icon {
+    display: none;
+  }
+
+  .header-title {
+    font-size: 5rem;
+    padding: 0 2rem;
+    font-family: "ClashDisplay-Semibold";
+    line-height: 90%;
+  }
+
+  .header-text {
+    font-size: 1rem;
+    padding: 0 2rem;
+    font-weight: 100;
+    line-height: normal;
+  }
+
+  .header-line-top,
+  .header-line-bottom {
+    padding: 0 1rem;
+  }
+
+  .title-container-left,
+  .title-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    padding: 2rem;
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  .title-text {
+    margin-left: 0; /* Center text horizontally */
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .title-dots {
+    opacity: 0.5;
+    left: 0;
+    margin-left: 20px;
+  }
+
+  .service-container {
+    width: 400px;
+  }
+
+  .studio-client-card {
+    width: 150px;
+    height: 150px;
+  }
+
+  .studio-client-logo {
+    width: 80px;
+  }
+
+  .team-card-group-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team-group-title h1 {
+    font-size: 30px;
+  }
+
+  .team-group-title-line {
+    display: none;
+  }
+
+  .team-group-title-line-mobile {
+    display: block;
+  }
+
+  .typeform-container {
+    margin-top: 72px;
+  }
+
+  .typeform {
+    width: 90%;
+  }
+
+  .dots-bg {
+    width: 60%;
+  }
+
+  .gradient-two {
+    padding-top: 2601px;
+  }
+
+  .gradient-three {
+    padding-top: 3929px;
+  }
+
+  .gradient-four {
+    padding-top: 5500px;
+  }
+
+  .gradient-five {
+    padding-top: 6400px;
+  }
+
+  .gradient-six {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    padding-top: 8053px;
+    transform: scaleX(-1);
+    right: 0;
+  }
+
+  .gradient-seven {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    padding-top: 9000px;
+  }
+
+  .graphic-two,
+  .graphic-one {
+    display: none;
   }
 }
