@@ -9,9 +9,9 @@ import Solmg from "../assets/pfps/SOLMG.jpeg";
 import LineRight from "../assets/client/team-line-right.svg";
 import LineLeft from "../assets/client/team-line-left.svg";
 
-const TeamGroup = () => {
+const TeamGroup = React.forwardRef((props, ref) => {
   return (
-    <div className="team-group-main">
+    <div className="team-group-main" ref={ref}>
       {/* CORE TEAM ---------------------------- */}
       <div className="team-group-section">
         <div className="team-group-title">
@@ -40,6 +40,6 @@ const TeamGroup = () => {
       </div>
     </div>
   );
-};
+});
 
 export default TeamGroup;

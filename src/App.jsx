@@ -13,21 +13,36 @@ import Dots from "./assets/background/dots-bg.png";
 import Gradient from "./assets/background/gradient.png";
 import GraphicOne from "./assets/background/big-graphic-one.png";
 import GraphicTwo from "./assets/background/big-graphic-two.png";
+import { useRef } from "react";
 
 function App() {
+  const showroomRef = useRef(null);
+  const servicesRef = useRef(null);
+  const clientsRef = useRef(null);
+  const teamRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <>
-      <NavBar />
+      <NavBar
+        refs={{
+          showroomRef,
+          servicesRef,
+          clientsRef,
+          teamRef,
+          contactRef,
+        }}
+      />
       <Header />
-      <Showroom />
+      <Showroom ref={showroomRef} />
       <TitleTextLeft title="3D Design Services" />
-      <ServicesGroup />
+      <ServicesGroup ref={servicesRef} />
       <TitleTextRight title="Studio Clients" />
-      <StudioClientsGroup />
+      <StudioClientsGroup ref={clientsRef} />
       <TitleTextLeft title="Team & Partnerships" />
-      <TeamGroup />
+      <TeamGroup ref={teamRef} />
       <TitleTextRight title="Work with us" />
-      <TypeformEmbed />
+      <TypeformEmbed ref={contactRef} />
       <Footer />
       <div className="background-elements">
         <img className="dots-bg" src={Dots} alt="" />

@@ -11,9 +11,9 @@ import Madlads from "../assets/studio-clients/madlads.svg";
 import Poppalz from "../assets/studio-clients/poppalz.png";
 import Ukiyo from "../assets/studio-clients/ukiyo.svg";
 
-const StudioClientsGroup = () => {
+const StudioClientsGroup = React.forwardRef((props, ref) => {
   return (
-    <div className="studio-cards-group">
+    <div className="studio-cards-group" ref={ref}>
       <div className="studio-client-card-container">
         <StudioClientsCard logo={ChaChaVans} />
         <StudioClientsCard logo={Dragons} />
@@ -28,6 +28,6 @@ const StudioClientsGroup = () => {
       </div>
     </div>
   );
-};
+});
 
 export default StudioClientsGroup;

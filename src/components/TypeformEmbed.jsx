@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const TypeformEmbed = () => {
+const TypeformEmbed = React.forwardRef((props, ref) => {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "//embed.typeform.com/next/embed.js";
@@ -16,7 +16,7 @@ const TypeformEmbed = () => {
   }, []);
 
   return (
-    <div id="typeform-container" className="typeform-container">
+    <div id="typeform-container" className="typeform-container" ref={ref}>
       <div
         data-tf-widget="Bp2cawLm"
         data-tf-opacity="100"
@@ -27,6 +27,6 @@ const TypeformEmbed = () => {
       ></div>
     </div>
   );
-};
+});
 
 export default TypeformEmbed;

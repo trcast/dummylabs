@@ -11,9 +11,9 @@ import Metadata from "../assets/icons/metadata.svg";
 import Rendering from "../assets/icons/rendering.svg";
 import Skinning from "../assets/icons/skinning.svg";
 
-const ServicesGroup = () => {
+const ServicesGroup = React.forwardRef((props, ref) => {
   return (
-    <div className="service-cards-container">
+    <div className="service-cards-container" ref={ref}>
       <ServicesCard
         icon={Modeling}
         header="3D Modeling"
@@ -66,6 +66,6 @@ const ServicesGroup = () => {
       />
     </div>
   );
-};
+});
 
 export default ServicesGroup;
