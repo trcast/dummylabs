@@ -623,6 +623,7 @@ footer {
 
   .showroom-container {
     padding: 0; /* Reduce horizontal padding */
+    max-width: 100%;
   }
 
   .nav-desktop {
