@@ -42,7 +42,7 @@ function App() {
       <ServicesGroup ref={servicesRef} />
       <TitleTextRight title="Studio Clients" />
       <StudioClientsGroup ref={clientsRef} />
-      <TitleTextLeft title="Team & Partnerships" />
+      <TitleTextLeft title="Team" />
       <TeamGroup ref={teamRef} />
       <TitleTextRight title="Work with us" />
       <TypeformEmbed ref={contactRef} />
