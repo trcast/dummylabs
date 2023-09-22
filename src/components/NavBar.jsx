@@ -94,7 +94,7 @@ const NavBar = ({ refs }) => {
             <img src={twitter} alt="Twitter Logo" className="nav-social-icon" />
           </a>
           <a
-            href="https://discord.gg/kZmcmaMJ"
+            href="https://discord.gg/TUpEbX9tzq"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -159,7 +159,7 @@ const NavBar = ({ refs }) => {
                 <p className="nav-links-text-mobile">twitter</p>
               </a>
               <a
-                href="https://discord.gg/kZmcmaMJ"
+                href="https://discord.gg/TUpEbX9tzq"
                 target="_blank"
                 rel="noopener noreferrer"
               >
