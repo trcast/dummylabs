@@ -727,7 +727,7 @@ footer {
   .title-text {
     margin-left: 0; /* Center text horizontally */
     text-align: center;
-    font-size: 56px;
+    font-size: 4rem;
   }
 
   .title-line {
@@ -770,6 +770,7 @@ footer {
 
   .team-group-title-line-mobile {
     display: block;
+    width: 100%;
   }
 
   .typeform-container {
