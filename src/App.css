@@ -756,10 +756,12 @@ footer {
   .team-card-group-container {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .team-group-title h1 {
-    font-size: 32px;
+    font-size: 30px;
+    text-align: center;
   }
 
   .team-group-title-line {
