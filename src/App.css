@@ -634,6 +634,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .nav-desktop {
     display: none;
   }
