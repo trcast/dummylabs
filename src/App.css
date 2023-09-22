@@ -730,6 +730,10 @@ footer {
     font-size: 40px;
   }
 
+  .title-line {
+    width: 90%;
+  }
+
   .title-dots {
     opacity: 0.5;
     left: 0;
