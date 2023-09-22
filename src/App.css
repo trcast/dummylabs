@@ -58,7 +58,7 @@ a {
   text-decoration: none;
 }
 
-nav {
+.nav-desktop {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -104,6 +104,10 @@ nav {
 
 .nav-links-text:hover {
   color: var(--Yellow);
+}
+
+.nav-mobile {
+  display: none;
 }
 
 .hover-underline-animation {
@@ -604,7 +608,7 @@ footer {
 
 .footer-copy {
   color: var(--Text---Off-White, #f5f1f1);
-  font-family: Sofia Sans;
+  font-family: "ClashDisplay-Regular";
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -629,23 +633,64 @@ footer {
   transform: scale(1.2);
 }
 
-@media (max-width: 500px) {
-  nav {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .nav-logo {
-    padding-bottom: 2rem;
-  }
-
-  .nav-logo:hover {
-    transform: scale(1.1);
-  }
-
-  .nav-social-icon {
+@media (max-width: 768px) {
+  .nav-desktop {
     display: none;
+  }
+
+  .nav-mobile {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 24px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--Background-Color);
+  }
+
+  .nav-logo-mobile {
+    width: 2rem;
+  }
+
+  .nav-header-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-content-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 0;
+  }
+
+  .nav-line-mobile {
+    width: 100%;
+  }
+
+  .nav-links-text-mobile {
+    color: var(--White);
+    font-family: IBM Plex Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+  }
+
+  .nav-links-text-mobile:hover {
+    color: var(--Yellow);
   }
 
   .header-title {
@@ -692,7 +737,7 @@ footer {
   }
 
   .service-container {
-    width: 400px;
+    width: 360px;
   }
 
   .studio-client-card {
@@ -710,7 +755,7 @@ footer {
   }
 
   .team-group-title h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .team-group-title-line {
@@ -727,6 +772,14 @@ footer {
 
   .typeform {
     width: 90%;
+  }
+
+  .footer-copy {
+    font-size: 18px;
+  }
+
+  .footer-socials {
+    width: 36px;
   }
 
   .dots-bg {
@@ -768,5 +821,26 @@ footer {
   .graphic-two,
   .graphic-one {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1700px) {
+  .header-title {
+    font-size: 12rem;
+    padding: 0 2rem;
+    font-family: "ClashDisplay-Semibold";
+    line-height: 90%;
+  }
+
+  .header-text {
+    font-size: 2rem;
+    padding: 0 2rem;
+    font-weight: 100;
+    line-height: normal;
+  }
+
+  .header-line-top,
+  .header-line-bottom {
+    padding: 0 1rem;
   }
 }
