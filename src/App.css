@@ -46,8 +46,8 @@
 
 body {
   background-color: var(--Background-Color);
-  overflow-x: hidden;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -64,7 +64,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 70px;
-  width: 100%;
+  max-width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -73,7 +73,7 @@ a {
 }
 
 .nav-logo {
-  width: 3rem;
+  max-width: 3rem;
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -654,7 +654,7 @@ footer {
   }
 
   .nav-logo-mobile {
-    width: 2rem;
+    max-width: 2rem;
   }
 
   .nav-header-mobile {
@@ -664,16 +664,11 @@ footer {
   }
 
   .nav-content-mobile {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 36px 0;
-  }
-
-  .nav-line-mobile {
-    width: 100%;
   }
 
   .nav-links-text-mobile {
@@ -719,7 +714,6 @@ footer {
     justify-content: center;
     align-items: center; /* Center horizontally */
     padding: 2rem;
-    width: 100%;
     float: none;
     margin: 0;
   }
@@ -727,7 +721,7 @@ footer {
   .title-text {
     margin-left: 0; /* Center text horizontally */
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .title-line {
@@ -741,26 +735,30 @@ footer {
   }
 
   .service-container {
-    width: 360px;
+    max-width: 20rem;
   }
 
   .studio-client-card {
-    width: 150px;
-    height: 150px;
+    max-width: 10rem;
+    max-height: 10rem;
   }
 
   .studio-client-logo {
-    width: 80px;
+    max-width: 80px;
   }
 
   .team-card-group-container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
+  }
+
+  .team-group-title {
+    max-width: 100%;
   }
 
   .team-group-title h1 {
-    font-size: 30px;
+    font-size: 32px;
     text-align: center;
   }
 
@@ -770,7 +768,6 @@ footer {
 
   .team-group-title-line-mobile {
     display: block;
-    width: 100%;
   }
 
   .typeform-container {
@@ -778,7 +775,7 @@ footer {
   }
 
   .typeform {
-    width: 90%;
+    max-width: 90%;
   }
 
   .footer-copy {
@@ -786,11 +783,11 @@ footer {
   }
 
   .footer-socials {
-    width: 36px;
+    max-width: 36px;
   }
 
   .dots-bg {
-    width: 60%;
+    max-width: 60%;
   }
 
   .gradient-two {
