@@ -546,6 +546,14 @@ header {
   padding-top: 5400px;
 }
 
+.gradient-six {
+  display: none;
+}
+
+.gradient-seven {
+  display: none;
+}
+
 .graphic-one {
   z-index: -3;
   position: absolute;
