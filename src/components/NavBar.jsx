@@ -40,6 +40,10 @@ const NavBar = ({ refs }) => {
     setMenuOpen((prevState) => !prevState);
   }
 
+  const navContentClass = menuOpen
+    ? "nav-content-mobile.open"
+    : "nav-content-mobile";
+
   return (
     <>
       <nav className="nav-desktop">
