@@ -40,10 +40,6 @@ const NavBar = ({ refs }) => {
     setMenuOpen((prevState) => !prevState);
   }
 
-  const navContentClass = menuOpen
-    ? "nav-content-mobile.open"
-    : "nav-content-mobile";
-
   return (
     <>
       <nav className="nav-desktop">
@@ -118,7 +114,7 @@ const NavBar = ({ refs }) => {
           />
         </div>
         {menuOpen && (
-          <div className="nav-content-mobile">
+          <div className={`nav-content-mobile ${menuOpen ? "" : "hidden"}`}>
             <img className="nav-line-mobile" src={navtop} alt="" />
             <div className="nav-links-mobile">
               <p

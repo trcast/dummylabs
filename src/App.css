@@ -648,7 +648,6 @@ footer {
     padding: 24px;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
     z-index: 100;
     background-color: var(--Background-Color);
   }
@@ -669,6 +668,19 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 36px 0;
+    position: relative;
+    transition: var(--Transition);
+  }
+
+  .nav-content-mobile.hidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 0;
+    position: absolute;
+    top: -1000px;
+    transition: var(--Transition);
   }
 
   .nav-links-text-mobile {
