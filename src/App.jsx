@@ -48,13 +48,13 @@ function App() {
         <link rel="icon" type="image/png" sizes="16x16" href={IconLogo} />
         <meta name="theme-color" content="#fb9516" />
         <meta name="twitter:card" content={PreviewBanner} />
-        <meta name="twitter:url" content="https://twitter.com/DummiesLab" />
+        <meta name="twitter:site" content="@Dummy_Labs" />
         <meta name="twitter:title" content="DUMMY LABS" />
         <meta
           name="twitter:description"
           content="Delivering premium 3D design services & crafting timeless collections."
         />
-        <meta name="twitter:image" content={IconLogo} />
+        <meta name="twitter:image" content={PreviewBanner} />
       </Helmet>
       <NavBar
         refs={{
