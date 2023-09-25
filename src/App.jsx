@@ -14,6 +14,9 @@ import Gradient from "./assets/background/gradient.png";
 import GraphicOne from "./assets/background/big-graphic-one.png";
 import GraphicTwo from "./assets/background/big-graphic-two.png";
 import { useRef } from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import IconLogo from "./assets/client/link-preview-logo.png";
+import PreviewBanner from "./assets/client/link-preview-banner.png";
 
 function App() {
   const showroomRef = useRef(null);
@@ -24,7 +27,35 @@ function App() {
   const headerRef = useRef(null);
 
   return (
-    <>
+    <HelmetProvider>
+      <Helmet>
+        <title>DUMMY LABS</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="Delivering premium 3D design services & crafting timeless collections."
+        />
+        <meta property="og:image" content={PreviewBanner} />
+        <meta property="og:url" content="https://dummylabs.netlify.app" />
+        <meta name="og:title" content="DUMMY LABS" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href={IconLogo} />
+        <link rel="icon" type="image/png" sizes="32x32" href={IconLogo} />
+        <link rel="icon" type="image/png" sizes="16x16" href={IconLogo} />
+        <meta name="theme-color" content="#fb9516" />
+        <meta name="twitter:card" content={PreviewBanner} />
+        <meta name="twitter:url" content="https://twitter.com/DummiesLab" />
+        <meta name="twitter:title" content="DUMMY LABS" />
+        <meta
+          name="twitter:description"
+          content="Delivering premium 3D design services & crafting timeless collections."
+        />
+        <meta name="twitter:image" content={IconLogo} />
+      </Helmet>
       <NavBar
         refs={{
           showroomRef,
@@ -58,7 +89,7 @@ function App() {
         <img className="graphic-one" src={GraphicOne} alt="" />
         <img className="graphic-two" src={GraphicTwo} alt="" />
       </div>
-    </>
+    </HelmetProvider>
   );
 }
 
