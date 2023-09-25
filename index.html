@@ -7,11 +7,37 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-
     <title>DUMMY LABS</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@dhaiwat10/react-link-preview/dist/index.css"
+    />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- Add this just before the closing </body> tag -->
+    <div id="link-preview-container"></div>
+
+    <script type="module">
+      import React from "react";
+      import ReactDOM from "react-dom";
+      import { LinkPreview } from "@dhaiwat10/react-link-preview";
+      import LinkBanner from "./src/assets/client/link-preview-banner.png";
+
+      const linkPreviewProps = {
+        url: "https://dummylabs.netlify.app",
+        title: "DUMMY LABS",
+        description:
+          "Delivering premium 3D design services & crafting timeless collections.",
+        image: LinkBanner,
+      };
+
+      ReactDOM.render(
+        React.createElement(LinkPreview, linkPreviewProps),
+        document.getElementById("link-preview-container")
+      );
+    </script>
   </body>
 </html>
