@@ -673,7 +673,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 36px 0;
+    padding: 24px 0;
     transition: var(--Transition);
   }
 
@@ -696,14 +696,14 @@ footer {
 
   .header-title {
     font-size: 5rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
     font-family: "ClashDisplay-Semibold";
     line-height: 90%;
   }
 
   .header-text {
     font-size: 1rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
     font-weight: 100;
     line-height: normal;
   }
