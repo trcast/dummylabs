@@ -141,7 +141,7 @@ a {
 
 .nav-social-icon {
   width: 1.8rem;
-  margin-left: 0.5rem;
+  margin-left: 0.8rem;
   cursor: pointer;
   transition: var(--Transition-Two);
 }
