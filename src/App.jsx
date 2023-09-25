@@ -14,10 +14,6 @@ import Gradient from "./assets/background/gradient.png";
 import GraphicOne from "./assets/background/big-graphic-one.png";
 import GraphicTwo from "./assets/background/big-graphic-two.png";
 import { useRef } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import IconLogo from "./assets/client/link-preview-logo.png";
-import PreviewBanner from "./assets/client/link-preview-banner.png";
-import PreviewLogoTransparent from "./assets/client/dummylabs-logo.svg";
 
 function App() {
   const showroomRef = useRef(null);
@@ -29,53 +25,6 @@ function App() {
 
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>DUMMY LABS</title>
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-          <link rel="icon" href={PreviewLogoTransparent} />
-
-          <meta property="og:locale" content="en_US" />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:description"
-            content="Delivering premium 3D design services & crafting timeless collections."
-          />
-          <meta property="og:image" content={PreviewBanner} />
-          <meta property="og:url" content="https://dummylabs.netlify.app" />
-          <meta name="og:title" content="DUMMY LABS" />
-
-          <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href={PreviewLogoTransparent}
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href={PreviewLogoTransparent}
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href={PreviewLogoTransparent}
-          />
-          <meta name="theme-color" content="#fb9516" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@Dummy_Labs" />
-          <meta name="twitter:title" content="DUMMY LABS" />
-          <meta
-            name="twitter:description"
-            content="Delivering premium 3D design services & crafting timeless collections."
-          />
-          <meta name="twitter:image" content={PreviewBanner} />
-        </Helmet>
-      </HelmetProvider>
       <NavBar
         refs={{
           showroomRef,
