@@ -75,6 +75,7 @@ a {
 .nav-logo {
   max-width: 3rem;
   cursor: pointer;
+  padding: 1 39.5px;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
