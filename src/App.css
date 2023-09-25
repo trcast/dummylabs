@@ -630,13 +630,13 @@ footer {
   transform: scale(1.2);
 }
 
-@media (min-width: 360px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 836px) {
   body {
     overflow-x: hidden;
   }
 
   .showroom-container {
-    padding: 0; /* Reduce horizontal padding */
+    padding: 0;
     max-width: 100%;
   }
 
@@ -843,9 +843,14 @@ footer {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1700px) {
+@media (min-width: 836px) and (max-width: 1400px) {
   body {
     overflow-x: hidden;
+  }
+
+  .showroom-container {
+    padding: 0;
+    max-width: 100%;
   }
 
   .header-title {
@@ -865,5 +870,111 @@ footer {
   .header-line-top,
   .header-line-bottom {
     padding: 0 1rem;
+  }
+
+  .title-container-left,
+  .title-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center horizontally */
+    padding: 2rem 20px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .title-text {
+    margin-left: 0; /* Center text horizontally */
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .title-line {
+    max-width: 90%;
+  }
+
+  .title-dots {
+    opacity: 0.5;
+    left: 0;
+    margin-left: 20px;
+  }
+
+  .service-container,
+  .studio-client-card {
+    max-width: 90vw;
+  }
+
+  .studio-client-logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .team-card-group-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team-group-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 36px;
+    margin-top: 36px;
+  }
+
+  .team-group-title h1 {
+    font-size: 56px;
+    text-align: center;
+  }
+
+  .team-group-title-line {
+    display: none;
+  }
+
+  .team-group-title-line-mobile {
+    display: block;
+  }
+  .typeform-container {
+    margin-top: 72px;
+  }
+
+  .typeform {
+    max-width: 90%;
+  }
+
+  .footer-copy {
+    font-size: 18px;
+  }
+
+  .footer-socials {
+    max-width: 36px;
+  }
+
+  .dots-bg {
+    max-width: 60%;
+  }
+
+  .gradient-two {
+    max-width: 100%;
+  }
+
+  .gradient-three {
+    max-width: 100%;
+  }
+
+  .gradient-four {
+    max-width: 100%;
+  }
+
+  .gradient-five {
+    max-width: 100%;
+  }
+
+  .graphic-two,
+  .graphic-one {
+    display: none;
   }
 }
