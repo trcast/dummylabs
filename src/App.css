@@ -60,7 +60,6 @@ a {
 
 .nav-desktop {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 70px;
@@ -75,7 +74,6 @@ a {
 .nav-logo {
   max-width: 3rem;
   cursor: pointer;
-  padding: 1 39.5px;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -89,6 +87,7 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  flex-grow: 1;
 }
 
 .nav-links-text {
@@ -99,12 +98,22 @@ a {
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
-  margin: 0 1rem;
+  padding: 0 1rem;
   transition: all 400ms ease-in-out;
 }
 
 .nav-links-text:hover {
   color: var(--Yellow);
+}
+
+.nav-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-social-icon {
+  margin: 0 0.5rem; /* Add margin between social icons */
 }
 
 .nav-mobile {
