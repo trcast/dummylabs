@@ -3,6 +3,7 @@ import { useState } from "react";
 import logo from "../assets/client/dummylabs-logo.svg";
 import twitter from "../assets/client/twitter.svg";
 import discord from "../assets/client/discord.svg";
+import instagram from "../assets/client/instagram.svg";
 import navtop from "../assets/client/mobile-menu-top.svg";
 import navbottom from "../assets/client/mobile-menu-bottom.svg";
 import menubars from "../assets/client/mobile-menu-bars.svg";
@@ -96,6 +97,17 @@ const NavBar = ({ refs }) => {
           >
             <img src={discord} alt="Discord Logo" className="nav-social-icon" />
           </a>
+          <a
+            href="https://instagram.com/dummylabs.co?igshid=MzRlODBiNWFlZA=="
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={instagram}
+              alt="Instagram Logo"
+              className="nav-social-icon"
+            />
+          </a>
         </div>
       </nav>
       {/* MOBILE ---------------------------------- */}
@@ -114,7 +126,7 @@ const NavBar = ({ refs }) => {
           />
         </div>
         {menuOpen && (
-          <div className={`nav-content-mobile ${menuOpen ? "" : "hidden"}`}>
+          <div className="nav-content-mobile">
             <img className="nav-line-mobile" src={navtop} alt="" />
             <div className="nav-links-mobile">
               <p

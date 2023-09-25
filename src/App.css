@@ -133,6 +133,12 @@ a {
   transform-origin: bottom left;
 }
 
+.nav-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-social-icon {
   width: 1.8rem;
   margin-left: 0.5rem;
@@ -646,8 +652,8 @@ footer {
     gap: 12px;
     width: 100%;
     padding: 24px;
-    position: -webkit-sticky;
     position: sticky;
+    top: 0;
     z-index: 100;
     background-color: var(--Background-Color);
   }
@@ -668,18 +674,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 36px 0;
-    position: relative;
-    transition: var(--Transition);
-  }
-
-  .nav-content-mobile.hidden {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 36px 0;
-    position: absolute;
-    top: -1000px;
     transition: var(--Transition);
   }
 
