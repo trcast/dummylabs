@@ -6,6 +6,7 @@ import Danny from "../assets/pfps/Danny.png";
 import Nick from "../assets/pfps/Nick.png";
 import Ompo from "../assets/pfps/Ompo.png";
 import Solmg from "../assets/pfps/SOLMG.jpeg";
+import Kaan from "../assets/pfps/kaan.jpeg";
 import LineRight from "../assets/client/team-line-right.svg";
 import LineLeft from "../assets/client/team-line-left.svg";
 import LineShortRight from "../assets/client/line-short-bottom-right-alt.svg";
@@ -87,6 +88,12 @@ const TeamGroup = React.forwardRef((props, ref) => {
             title="3D Animator"
             name="Clipse"
             link="https://twitter.com/OBClipse"
+          />
+          <TeamCard
+            pfp={Kaan}
+            title="3D Artist"
+            name="Kaan Tapucu"
+            link="https://twitter.com/KaanTapucuArt"
           />
         </div>
       </div>
