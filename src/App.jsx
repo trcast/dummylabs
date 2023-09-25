@@ -14,8 +14,6 @@ import Gradient from "./assets/background/gradient.png";
 import GraphicOne from "./assets/background/big-graphic-one.png";
 import GraphicTwo from "./assets/background/big-graphic-two.png";
 import { useRef } from "react";
-import { LinkPreview } from "@dhaiwat10/react-link-preview";
-import LinkBanner from "./assets/client/link-preview-banner.png";
 
 function App() {
   const showroomRef = useRef(null);
@@ -27,12 +25,6 @@ function App() {
 
   return (
     <>
-      <LinkPreview
-        url="https://dummylabs.netlify.app"
-        title="DUMMY LABS"
-        description="Delivering premium 3D design services & crafting timeless collections."
-        image={LinkBanner}
-      />
       <NavBar
         refs={{
           showroomRef,
