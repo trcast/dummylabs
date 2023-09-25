@@ -17,6 +17,7 @@ import { useRef } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import IconLogo from "./assets/client/link-preview-logo.png";
 import PreviewBanner from "./assets/client/link-preview-banner.png";
+import PreviewLogoTransparent from "./assets/client/dummylabs-logo.svg";
 
 function App() {
   const showroomRef = useRef(null);
@@ -31,7 +32,7 @@ function App() {
       <Helmet>
         <title>DUMMY LABS</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <link rel="icon" href={PreviewLogoTransparent} />
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
@@ -43,9 +44,23 @@ function App() {
         <meta property="og:url" content="https://dummylabs.netlify.app" />
         <meta name="og:title" content="DUMMY LABS" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href={IconLogo} />
-        <link rel="icon" type="image/png" sizes="32x32" href={IconLogo} />
-        <link rel="icon" type="image/png" sizes="16x16" href={IconLogo} />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href={PreviewLogoTransparent}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href={PreviewLogoTransparent}
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href={PreviewLogoTransparent}
+        />
         <meta name="theme-color" content="#fb9516" />
         <meta name="twitter:card" content={PreviewBanner} />
         <meta name="twitter:site" content="@Dummy_Labs" />
