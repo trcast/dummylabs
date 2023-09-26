@@ -225,7 +225,7 @@ header {
 
 .iframe-showroom {
   min-width: 90vw;
-  height: 50rem;
+  min-height: 50vw;
   border: none;
 }
 
