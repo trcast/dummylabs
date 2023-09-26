@@ -17,14 +17,10 @@ const TypeformEmbed = React.forwardRef((props, ref) => {
 
   return (
     <div id="typeform-container" className="typeform-container" ref={ref}>
-      <div
-        data-tf-widget="Bp2cawLm"
-        data-tf-opacity="100"
-        data-tf-iframe-props="title=DUMMY LABS"
-        data-tf-transitive-search-params
-        data-tf-medium="snippet"
+      <iframe
         className="typeform"
-      ></div>
+        src="https://forms.zohopublic.com/danny45/form/DUMMYLABS/formperma/shT5k-GLADe89NeRsy_k5_2O_LnZuyT2d9DGhQYAE8U"
+      ></iframe>
     </div>
   );
 });
