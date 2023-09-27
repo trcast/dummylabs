@@ -4,9 +4,7 @@ const Showroom = ({ onShowroomLoad }) => {
   const iframeRef = useRef(null);
 
   useEffect(() => {
-    // Attach the onLoad event handler to the iframe
     iframeRef.current.onload = () => {
-      // Notify the parent component (App) that the showroom is loaded
       onShowroomLoad();
     };
   }, [onShowroomLoad]);
