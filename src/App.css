@@ -184,6 +184,7 @@ header {
   font-size: 14rem;
   line-height: 80%;
   margin: 18px 0;
+  z-index: 1;
 }
 
 .header-text {
@@ -228,7 +229,6 @@ header {
   min-width: 90vw;
   min-height: 50vw;
   border: none;
-  overflow-y: hidden;
 }
 
 .title-container-left {
@@ -523,7 +523,7 @@ header {
 }
 
 .dots-bg {
-  z-index: -1;
+  z-index: 0;
   top: 0;
   position: absolute;
   padding-top: 160px;
@@ -650,6 +650,49 @@ footer {
 
 .loading {
   background-color: var(--Background-Color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.loading-logo-full {
+  width: 25%;
+  padding-bottom: 2rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0.29, 0.1, 0.34, 0.99);
+  }
+  50% {
+    transform: rotate(180deg);
+    animation-timing-function: cubic-bezier(0.29, 0.1, 0.34, 0.99);
+  }
+  100% {
+    transform: rotate(360deg);
+    animation-timing-function: cubic-bezier(0.29, 0.1, 0.34, 0.99);
+  }
+}
+
+.loading-logo-small {
+  max-width: 4rem;
+  animation: spin 1.5s linear infinite;
+  margin-bottom: 2rem;
+}
+
+.loading-title {
+  font-family: "ClashDisplay-Regular";
+  font-style: normal;
+  color: var(--Yellow);
+  font-size: 3rem;
+  line-height: 80%;
 }
 
 @media (min-width: 360px) and (max-width: 836px) {
