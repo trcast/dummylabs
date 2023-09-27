@@ -9,16 +9,10 @@ const ContactForm = React.forwardRef((props, ref) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // DUMMY LABS
-    // const serviceId = "service_0abv4js";
-    // const templateId = "template_iu2zf1p";
-    //   const publicKey = "QmkQ60oXA13S9MuK-";
+    const serviceId = "service_0abv4js";
+    const templateId = "template_iu2zf1p";
+    const publicKey = "QmkQ60oXA13S9MuK-";
 
-    const serviceId = "service_9b2oa5i";
-    const templateId = "template_1qk5tef";
-    const publicKey = "6Zlt-pq-lGXILchRh";
-
-    // Create a new object that contains dynamic template params
     const templateParams = {
       from_name: name,
       from_email: email,
@@ -26,7 +20,6 @@ const ContactForm = React.forwardRef((props, ref) => {
       message: message,
     };
 
-    // Send the email using EmailJS
     emailjs
       .send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
