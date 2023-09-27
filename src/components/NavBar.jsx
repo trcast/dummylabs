@@ -24,7 +24,7 @@ const NavBar = ({ refs }) => {
     if (ref.current) {
       const sectionTop =
         ref.current.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({ top: sectionTop - 824, behavior: "smooth" });
+      window.scrollTo({ top: sectionTop - 984, behavior: "smooth" });
     }
     setMenuOpen((prevState) => !prevState);
   };
@@ -172,6 +172,13 @@ const NavBar = ({ refs }) => {
                 rel="noopener noreferrer"
               >
                 <p className="nav-links-text-mobile">discord</p>
+              </a>
+              <a
+                href="https://instagram.com/dummylabs.co?igshid=MzRlODBiNWFlZA=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="nav-links-text-mobile">instagram</p>
               </a>
             </div>
             <img className="nav-line-mobile" src={navbottom} alt="" />

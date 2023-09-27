@@ -757,28 +757,6 @@ footer {
   transition: var(--Transition);
 }
 
-/* .contact-button {
-  display: flex;
-  width: 20rem;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 4px;
-  background-color: var(--Background-Color);
-  border: none;
-  color: #757575;
-  border: 1px solid var(--Transparent-Yello, rgba(246, 205, 88, 0.4));
-  font-family: IBM Plex Sans;
-  font-size: 21.3px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  cursor: pointer;
-  transition: var(--Transition);
-  align-self: flex-start;
-} */
-
 .contact-button:hover {
   transform: scale(0.97);
   background-color: var(--Yellow);
@@ -826,10 +804,11 @@ footer {
   .nav-content-mobile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 24px 0;
+    justify-content: flex-start;
+    align-items: center;
     transition: var(--Transition);
+    height: 100vh;
   }
 
   .nav-links-text-mobile {
@@ -847,6 +826,10 @@ footer {
 
   .nav-links-text-mobile:hover {
     color: var(--Yellow);
+  }
+
+  header {
+    margin-top: 2rem;
   }
 
   .header-title {
@@ -874,7 +857,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; /* Center horizontally */
-    padding: 2rem 20px;
+    padding: 4rem 8px;
     float: none;
     margin: 0;
   }
@@ -882,7 +865,7 @@ footer {
   .title-text {
     margin-left: 0; /* Center text horizontally */
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .title-line {
@@ -895,7 +878,6 @@ footer {
     margin-left: 20px;
   }
 
-  .service-container,
   .studio-client-card {
     max-width: 90vw;
   }
@@ -903,6 +885,24 @@ footer {
   .studio-client-logo {
     max-width: 100%;
     height: auto;
+  }
+
+  .service-container {
+    max-width: 90vw;
+    height: 350px;
+  }
+
+  .service-text {
+    gap: 12px;
+  }
+
+  .service-header {
+    font-size: 28px;
+  }
+
+  .service-descript {
+    font-size: 16px;
+    font-weight: 100;
   }
 
   .team-card-group-container {
@@ -922,7 +922,7 @@ footer {
   }
 
   .team-group-title h1 {
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
   }
 
@@ -934,16 +934,13 @@ footer {
     display: block;
   }
 
-  .typeform-container {
-    margin-top: 72px;
-  }
-
-  .typeform {
-    max-width: 90%;
+  footer {
+    height: 100px;
+    margin-top: 4rem;
   }
 
   .footer-copy {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .footer-socials {
@@ -952,6 +949,10 @@ footer {
 
   .dots-bg {
     max-width: 60%;
+  }
+
+  .gradient-one {
+    z-index: -2;
   }
 
   .gradient-two {
@@ -995,6 +996,24 @@ footer {
   .graphic-two,
   .graphic-one {
     display: none;
+  }
+
+  .contact-form {
+    flex-wrap: wrap;
+    padding: 2rem 12px;
+  }
+
+  .contact-email-name-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-input-name {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .contact-text-area {
+    margin: 10px 0;
   }
 }
 
@@ -1050,8 +1069,7 @@ footer {
 
   .title-dots {
     opacity: 0.5;
-    left: 0;
-    margin-left: 20px;
+    margin-left: -20px;
   }
 
   .service-container,
@@ -1131,5 +1149,18 @@ footer {
   .graphic-two,
   .graphic-one {
     display: none;
+  }
+
+  .contact-form {
+    flex-wrap: wrap;
+    padding: 2rem 144px;
+  }
+
+  .contact-input-name {
+    margin-right: 10px;
+  }
+
+  .contact-text-area {
+    margin: 10px 0;
   }
 }
