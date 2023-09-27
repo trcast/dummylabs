@@ -11,7 +11,7 @@ const StudioClientsGroup = lazy(() =>
   import("./components/StudioClientsGroup")
 );
 const TeamGroup = lazy(() => import("./components/TeamGroup"));
-const TypeformEmbed = lazy(() => import("./components/TypeformEmbed"));
+const ContactForm = lazy(() => import("./components/ContactForm"));
 const Footer = lazy(() => import("./components/Footer"));
 
 import Dots from "./assets/background/dots-bg.png";
@@ -61,7 +61,7 @@ function App() {
             <TitleTextLeft title="Team" />
             <TeamGroup ref={teamRef} />
             <TitleTextRight title="Work with us" />
-            <TypeformEmbed ref={contactRef} />
+            <ContactForm ref={contactRef} />
             <Footer />
             <div className="background-elements">
               <img className="dots-bg" src={Dots} alt="" />
