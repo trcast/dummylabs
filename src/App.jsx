@@ -21,12 +21,18 @@ import GraphicTwo from "./assets/background/big-graphic-two.png";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isShowroomLoaded, setIsShowroomLoaded] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  }, []);
+  const preloadComponents = async () => {
+    await import("./components/Showroom");
+    await import("./components/TitleTextLeft");
+    await import("./components/TitleTextRight");
+    await import("./components/ServicesGroup");
+    await import("./components/StudioClientsGroup");
+    await import("./components/TeamGroup");
+    await import("./components/ContactForm");
+    await import("./components/Footer");
+  };
 
   const showroomRef = useRef(null);
   const servicesRef = useRef(null);
@@ -34,6 +40,31 @@ function App() {
   const teamRef = useRef(null);
   const contactRef = useRef(null);
   const headerRef = useRef(null);
+
+  const handleShowroomLoad = () => {
+    setIsShowroomLoaded(true);
+  };
+
+  useEffect(() => {
+    if (isShowroomLoaded) {
+      setIsLoading(false);
+    }
+  }, [isShowroomLoaded]);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      preloadComponents()
+        .then(() => {
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error preloading components:", error);
+          setIsLoading(false);
+        });
+    }, 3000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   return (
     <>
@@ -53,7 +84,7 @@ function App() {
           />
           <Header ref={headerRef} />
           <Suspense fallback={<Loading />}>
-            <Showroom ref={showroomRef} />
+            <Showroom ref={showroomRef} onShowroomLoad={handleShowroomLoad} />
             <TitleTextLeft title="3D Design Services" />
             <ServicesGroup ref={servicesRef} />
             <TitleTextRight title="Studio Clients" />

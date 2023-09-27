@@ -3,7 +3,7 @@
 @font-face {
   font-family: "ClashDisplay-Regular";
   src: url("./assets/fonts/ClashDisplay-Regular.woff") format("woff");
-  font-display: swap;
+  font-display: swap; /* Use "swap" value to switch to custom font as soon as possible */
   font-style: normal;
 }
 
