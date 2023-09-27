@@ -1015,6 +1015,11 @@ footer {
   .contact-text-area {
     margin: 10px 0;
   }
+
+  .loading-logo-full {
+    width: 70%;
+    padding-bottom: 1.5rem;
+  }
 }
 
 @media (min-width: 836px) and (max-width: 1400px) {
@@ -1162,5 +1167,10 @@ footer {
 
   .contact-text-area {
     margin: 10px 0;
+  }
+
+  .loading-logo-full {
+    width: 30%;
+    padding-bottom: 1.5rem;
   }
 }
