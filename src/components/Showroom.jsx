@@ -1,26 +1,19 @@
 import React, { useEffect, useRef } from "react";
+import Iframe from "react-iframe";
 
-const Showroom = ({ onShowroomLoad }) => {
-  const iframeRef = useRef(null);
-
-  useEffect(() => {
-    iframeRef.current.onload = () => {
-      onShowroomLoad();
-    };
-  }, [onShowroomLoad]);
-
+const Showroom = React.forwardRef((props, ref) => {
   return (
-    <div className="showroom-container">
-      <iframe
+    <div className="showroom-container" ref={ref}>
+      <Iframe
         className="iframe-showroom"
         src="https://vto.webxr.tools/u/mattjantes/dummy-labs/"
         allow="camera; gyroscope;"
         allowFullScreen
         scrolling="no"
-        ref={iframeRef}
-      ></iframe>
+        position="relative"
+      ></Iframe>
     </div>
   );
-};
+});
 
 export default Showroom;
