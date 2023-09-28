@@ -33,7 +33,7 @@ const StudioClientsGroup = React.forwardRef((props, ref) => {
         <StudioClientsCard
           logo={Madlads}
           name="Mad Lads"
-          link="https://twitter.com/_thearchitects_"
+          link="https://twitter.com/MadLadsNFT"
         />
         <StudioClientsCard
           logo={Forgebots}

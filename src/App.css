@@ -428,6 +428,8 @@ header {
   display: block;
 }
 
+/* TEAM ------------------------------------------ */
+
 .team-card-container {
   display: flex;
   height: 414px;
@@ -438,8 +440,6 @@ header {
   cursor: pointer;
   transition: var(--Transition);
 }
-
-/* TEAM ------------------------------------------ */
 
 .team-card-container:hover {
   transform: translate(0, -20px);
@@ -759,8 +759,59 @@ footer {
 
 .contact-button:hover {
   transform: scale(0.97);
-  background-color: var(--Yellow);
+}
+
+.contact-form-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 290px;
+}
+
+.contact-form-success-text-container {
+  border-radius: 4px;
+  border: 1px solid var(--Transparent-Yello, rgba(246, 205, 88, 0.4));
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-form-success-text {
+  color: var(--Text---Off-White, #f5f1f1);
+  font-family: "ClashDisplay-Regular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90%;
+  padding: 8rem 0;
+}
+
+.submit-another-button {
+  display: flex;
+  width: 100%;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--Yellow);
+  border: none;
   color: var(--Background-Color);
+  font-family: IBM Plex Sans;
+  font-size: 21.3px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  transition: var(--Transition);
+}
+
+.submit-another-button:hover {
+  transform: scale(0.97);
 }
 
 @media (min-width: 360px) and (max-width: 836px) {
@@ -1016,6 +1067,11 @@ footer {
     margin: 10px 0;
   }
 
+  .contact-form-success {
+    padding: 2rem 12px;
+    text-align: center;
+  }
+
   .loading-logo-full {
     width: 70%;
     padding-bottom: 1.5rem;
@@ -1167,6 +1223,11 @@ footer {
 
   .contact-text-area {
     margin: 10px 0;
+  }
+
+  .contact-form-success {
+    padding: 2rem 144px;
+    text-align: center;
   }
 
   .loading-logo-full {

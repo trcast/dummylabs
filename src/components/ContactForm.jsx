@@ -5,6 +5,7 @@ const ContactForm = React.forwardRef((props, ref) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false); // Track submission status
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,11 +28,32 @@ const ContactForm = React.forwardRef((props, ref) => {
         setName("");
         setEmail("");
         setMessage("");
+        setIsSubmitted(true); // Set submission status to true on success
       })
       .catch((error) => {
         console.error("Error sending email:", error);
       });
   };
+
+  const handleNewRequest = () => {
+    setIsSubmitted(false);
+  };
+
+  if (isSubmitted) {
+    return (
+      <div className="contact-form-success">
+        <div className="contact-form-success-text-container">
+          <h1 className="contact-form-success-text">
+            Successfully sent request. Thank you!
+          </h1>
+        </div>
+        <button className="submit-another-button" onClick={handleNewRequest}>
+          Submit Another Request
+        </button>
+      </div>
+    );
+  }
+
   return (
     <form className="contact-form" onSubmit={handleSubmit} ref={ref}>
       <div className="contact-email-name-container">
