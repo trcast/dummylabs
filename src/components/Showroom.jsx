@@ -6,7 +6,7 @@ const Showroom = React.forwardRef((props, ref) => {
     <div className="showroom-container" ref={ref}>
       <Iframe
         className="iframe-showroom"
-        src="https://vto.webxr.tools/u/mattjantes/dummy-labs/"
+        src="https://vto.webxr.tools/u/mattjantes/dummy-labs/?disable-zoom=1"
         allow="camera; gyroscope;"
         allowFullScreen
         scrolling="no"
